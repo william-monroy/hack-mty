@@ -1,6 +1,5 @@
 .Content {
-    /* background-color: #1F1D2B; */
-    background-color: brown;
+    background-color: #1F1D2B;
     width: 100%;
     height: calc(100vh-90px);
     padding: 40px;
