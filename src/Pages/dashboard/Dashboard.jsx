@@ -4,6 +4,9 @@ import Navbar from '../../Components/navbar/Navbar'
 import Sidebar from '../../Components/sidebar/Sidebar'
 import Cursos from '../cursos/Cursos'
 import './Dashboard.css'
+import Entrenamiento from '../entrenamiento/Entrenamiento'
+import Estadisticas from '../estadisticas/Estadisticas'
+import Ajustes from '../ajustes/Ajustes'
 
 const Dashboard = () => {
     const [tab,setTab] = useState('Inicio');
@@ -21,8 +24,14 @@ const Dashboard = () => {
                 {
                     tab === 'Inicio' ?
                     <Inicio />
-                    : 
+                    : tab === 'Cursos' ?
                     <Cursos />
+                    : tab === 'Entrenamiento' ?
+                    <Entrenamiento />
+                    : tab === 'Estadisticas' ?
+                    <Estadisticas />
+                    :
+                    <Ajustes />
                 }
             </div>
         </div>

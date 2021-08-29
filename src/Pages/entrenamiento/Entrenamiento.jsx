@@ -1,7 +1,7 @@
 import React from 'react'
-import './Cursos.css'
+import './Entrenamiento.css'
 
-const Cursos = () => {
+const Entrenamiento = () => {
     return (
         <div>
             
@@ -9,4 +9,4 @@ const Cursos = () => {
     )
 }
 
-export default Cursos
+export default Entrenamiento
