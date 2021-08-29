@@ -1,7 +1,7 @@
 import React from 'react'
 import CardHome from '../cardHome/CardHome'
 import Tag from '../tag/Tag'
-import './Content.css'
+import './Inicio.css'
 import { UserOutlined } from '@ant-design/icons';
 import Git from '../../images/git.png'
 

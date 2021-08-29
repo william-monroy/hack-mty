@@ -4,7 +4,9 @@ import { HomeFilled, BookFilled, RocketFilled, PieChartFilled, SettingFilled } f
 import MenuItem from '../menuItem/MenuItem';
 import { Switch } from 'antd';
 
-const Sidebar = () => {
+const Sidebar = ({ tab, setTab }) => {
+
+    
 
     let sidebar = [
         {
@@ -50,6 +52,8 @@ const Sidebar = () => {
                         text={item.text}
                         color={item.color}
                         enabled={item.enable}
+                        tab={tab}
+                        setTab={setTab}
                     />
                 ))}
             </div>

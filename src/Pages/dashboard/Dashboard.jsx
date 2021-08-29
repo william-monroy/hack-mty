@@ -1,19 +1,29 @@
-import React from 'react'
-import Content from '../../Components/content/Content'
+import React, {useState} from 'react'
+import Inicio from '../../Components/inicio/Inicio'
 import Navbar from '../../Components/navbar/Navbar'
 import Sidebar from '../../Components/sidebar/Sidebar'
+import Cursos from '../cursos/Cursos'
 import './Dashboard.css'
 
 const Dashboard = () => {
+    const [tab,setTab] = useState('Inicio');
+
+    const handleClick = (tab) => {
+        setTab(tab);
+    } 
+
     return (
         <div className="Dashboard">
-            {/* Navbar */}
             <Navbar />
             <div className="main">
-                {/* Sidebar */}
-                <Sidebar />
-                {/* Content */}
-                <Content />
+                <Sidebar tab={handleClick} setTab={setTab}/>
+                {console.log(tab)}
+                {
+                    tab === 'Inicio' ?
+                    <Inicio />
+                    : 
+                    <Cursos />
+                }
             </div>
         </div>
     )
