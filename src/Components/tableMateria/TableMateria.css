@@ -2,6 +2,11 @@
 .TableMateria{
     width: 90%;
     height: auto;
-    background-color: #252836;
-    text-align: center;
+    
+    margin-top: 80px;
+}
+
+.ant-table-thead, ant-table-cell{
+    background: #22B07D !important;
+    border-radius: 16px 16px 0px 0px;
 }

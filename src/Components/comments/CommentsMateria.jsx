@@ -1,3 +1,4 @@
+import './CommentsMateria.css';
 import { Comment, Avatar, Divider } from 'antd';
 
 const ExampleComment = ({ children }) => (
@@ -21,7 +22,7 @@ const ExampleComment = ({ children }) => (
     </Comment>
 );
 
-const Comments = (props) => {
+const CommentsMateria = (props) => {
     return (
         <div className="Comments">
             <h1 className="Comments__title">Comentarios de la materia</h1>
@@ -33,4 +34,4 @@ const Comments = (props) => {
     );
 };
 
-export default Comments;
+export default CommentsMateria;
