@@ -20,7 +20,6 @@ const Dashboard = () => {
             <Navbar />
             <div className="main">
                 <Sidebar tab={handleClick} setTab={setTab}/>
-                {console.log(tab)}
                 {
                     tab === 'Inicio' ?
                     <Inicio />

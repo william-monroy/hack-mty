@@ -13,31 +13,31 @@ const Sidebar = ({ tab, setTab }) => {
             icon: <HomeFilled />,
             text: 'Inicio',
             color: '#FF7551',
-            enable: true,
+            enable: `${tab==='Inicio'?true:false}`,
         },
         {
             icon: <BookFilled />,
             text: 'Cursos',
             color: '#22B07D',
-            enable: false,
+            enable: `${tab==='Cursos'?true:false}`,
         },
         {
             icon: <RocketFilled />,
             text: 'Entrenamiento',
             color: '#FFC700',
-            enable: false,
+            enable: `${tab==='Entretenimiento'?true:false}`,
         },
         {
             icon: <PieChartFilled />,
             text: 'Estadísticas',
             color: '#E890FF',
-            enable: false,
+            enable: `${tab==='Estadísticas'?true:false}`,
         },
         {
             icon: <SettingFilled />,
             text: 'Ajustes',
             color: '#839DFE',
-            enable: false,
+            enable: `${tab==='Ajustes'?true:false}`,
         },
     ]
 

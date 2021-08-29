@@ -30,6 +30,46 @@ const Cursos = () => {
             enabled: false,
         }
     ]
+
+    let cards = [
+        {
+            nombre: 'Matemática',
+            cantidad: '10 cursos disponibles',
+            temas: 'Límites • Derivadas • Antiderivadas • Integrales • Métodos de Integración • Fracciones Parciales • Longitud de Arco • Superficies • Volúmenes • Optimización • Áreas • Curvas paramétricas • Coordenadas polares...',
+            visitas: '53K vistas'
+        },
+        {
+            nombre: '',
+            cantidad: '',
+            temas: '',
+            visitas: ''
+        },
+        {
+            nombre: '',
+            cantidad: '',
+            temas: '',
+            visitas: ''
+        },
+        {
+            nombre: '',
+            cantidad: '',
+            temas: '',
+            visitas: ''
+        },
+        {
+            nombre: '',
+            cantidad: '',
+            temas: '',
+            visitas: ''
+        },
+        {
+            nombre: '',
+            cantidad: '',
+            temas: '',
+            visitas: ''
+        }
+    ]
+
     return (
         <div className="Cursos">
             <h3 className="Content-title">Materias</h3>
@@ -39,7 +79,9 @@ const Cursos = () => {
                 ))}
             </div>
             <div className="cards">
-                <CardCurso />
+                {cards.map((item, index) => (
+                    <CardCurso nombre={item.nombre} cantidad={item.cantidad} temas={item.temas} visitas={item.visitas} key={index} />
+                ))}
             </div>
         </div>
     )
