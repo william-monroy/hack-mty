@@ -27,5 +27,8 @@ Este proyecto utiliza una licencia completamente OpenSource que te permite modif
 
 ## 📃Etapa de Planificación
 
+Lo primero que hicimos fue reunirnos para poder aterrizar la idea y el modelo de negocios que podiamos implementar.
 
+De este proceso salio la abstracción del modelado de la base de datos.
 
+[![Main.png](https://i.postimg.cc/Y90XfGNY/Main.png)](https://postimg.cc/xJry9d41)
