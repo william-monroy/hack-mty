@@ -153,7 +153,9 @@ const Content = () => {
                 ))}
             </div>
             <div className="cards">
-                <CardHome />
+                {videos.map((item, index) => (
+                    <CardHome />
+                ))}
             </div>
         </div>
     )
