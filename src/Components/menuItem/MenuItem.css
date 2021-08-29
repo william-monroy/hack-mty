@@ -1,0 +1,14 @@
+.MenuItem{
+    display: flex;
+    flex-direction: row;
+}
+
+.item-icon{
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.item-text{
+    margin-left: 5px;
+    font-size: 10px;
+}

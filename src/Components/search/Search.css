@@ -1,0 +1,18 @@
+.Search{
+    background-color: #353340;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+}
+
+.search{
+    width: 90%;
+    background-color: #353340;
+    color: #fff;
+    outline-width: 0;
+    border: none;
+    margin: 0 10px;
+    font-size: 15px;
+}

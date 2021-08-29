@@ -1,6 +1,7 @@
 import React from 'react'
 import './Sidebar.css'
 import { HomeFilled, BookFilled, RocketFilled, PieChartFilled, SettingFilled } from '@ant-design/icons';
+import MenuItem from '../menuItem/MenuItem';
 
 const Sidebar = () => {
 
@@ -25,14 +26,14 @@ const Sidebar = () => {
         },
         Estadisticas: {
             icon: <PieChartFilled />,
-            text:'',
-            color:'',
+            text: 'Estadísticas',
+            color: '#E890FF',
             enable: false,
         },
         Ajustes: {
             icon: <SettingFilled />,
-            text:'',
-            color:'',
+            text: 'Ajustes',
+            color: '#839DFE',
             enable: false,
         },
     }
@@ -40,6 +41,9 @@ const Sidebar = () => {
     return (
         <div className="Sidebar">
             <p className="Sidebar-title">MENU</p>
+            {sidebar.map(item => {
+                <MenuItem icon={item.icon} text={item.text} color={item.color} enabled={item.enable} />
+            })}
         </div>
     )
 }

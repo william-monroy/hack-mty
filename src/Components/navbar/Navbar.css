@@ -1,0 +1,28 @@
+.Navbar{
+    background-color: #1F1D2B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.Navbar-title{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.Navbar-user{
+    display: flex;
+    flex-direction: row;
+}
+
+.Navbar-user-name{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.Navbar-user-notification{
+    color: #fff;
+}
