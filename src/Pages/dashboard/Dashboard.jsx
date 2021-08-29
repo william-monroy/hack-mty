@@ -1,4 +1,5 @@
 import React from 'react'
+import Content from '../../Components/content/Content'
 import Navbar from '../../Components/navbar/Navbar'
 import Sidebar from '../../Components/sidebar/Sidebar'
 import './Dashboard.css'
@@ -8,9 +9,12 @@ const Dashboard = () => {
         <div className="Dashboard">
             {/* Navbar */}
             <Navbar />
-            {/* Sidebar */}
-            <Sidebar />
-            {/* Content */}
+            <div className="main">
+                {/* Sidebar */}
+                <Sidebar />
+                {/* Content */}
+                <Content />
+            </div>
         </div>
     )
 }
