@@ -3,6 +3,7 @@ import Navbar from '../../Components/navbar/Navbar';
 import Sidebar from '../../Components/sidebar/Sidebar';
 import HeaderMateria from '../../Components/headerMateria/HeaderMateria';
 import TableMateria from '../../Components/tableMateria/TableMateria';
+import CommentsMateria from '../../Components/comments/CommentsMateria';
 import './Materia.css';
 
 const columns = [
@@ -101,6 +102,7 @@ const Materia = () => {
                 <div className="Materia__content">
                     <HeaderMateria cantidad={10} nombre="Matemáticas" img={"Mate.jpg"} />
                     <TableMateria columns={columns} data={data}/>
+                    <CommentsMateria />
                 </div>
             </div>
             {/* Content */}

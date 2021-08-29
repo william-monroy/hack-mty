@@ -6,7 +6,11 @@
 .Materia__content{
     background-color: #1F1D2B;
     width: 100%;
-    height: calc(100vh-90px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .main{
