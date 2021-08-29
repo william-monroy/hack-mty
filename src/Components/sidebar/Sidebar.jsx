@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Sidebar.css'
 import { HomeFilled, BookFilled, RocketFilled, PieChartFilled, SettingFilled } from '@ant-design/icons';
 import MenuItem from '../menuItem/MenuItem';
@@ -6,40 +6,55 @@ import { Switch } from 'antd';
 
 const Sidebar = ({ tab, setTab }) => {
 
-    {console.log(tab)}
-
+    const [inicioE,setInicioE] = useState(true);
+    const [cursosE,setCursosE] = useState(false);
+    const [entrenamientoE,setEntrenamientoE] = useState(false);
+    const [estadisticasE,setEstadisticasE] = useState(false);
+    const [ajustesE, setAjuestesE] = useState(false);
+    
     let sidebar = [
         {
             icon: <HomeFilled />,
             text: 'Inicio',
             color: '#FF7551',
-            enable: `${tab==='Inicio'?true:false}`,
+            enable: inicioE,
         },
         {
             icon: <BookFilled />,
             text: 'Cursos',
             color: '#22B07D',
-            enable: `${tab==='Cursos'?true:false}`,
+            enable: cursosE,
         },
         {
             icon: <RocketFilled />,
             text: 'Entrenamiento',
             color: '#FFC700',
-            enable: `${tab==='Entretenimiento'?true:false}`,
+            enable: entrenamientoE,
         },
         {
             icon: <PieChartFilled />,
             text: 'Estadísticas',
             color: '#E890FF',
-            enable: `${tab==='Estadísticas'?true:false}`,
+            enable: estadisticasE,
         },
         {
             icon: <SettingFilled />,
             text: 'Ajustes',
             color: '#839DFE',
-            enable: `${tab==='Ajustes'?true:false}`,
+            enable: ajustesE,
         },
     ]
+    
+    const handleClick = (tab, inicioE, cursosE, entrenamientoE, estadisticasE, ajustesE) => {
+        setTab(tab);
+        setInicioE(inicioE);
+        setCursosE(cursosE);
+        setEntrenamientoE(entrenamientoE);
+        setEstadisticasE(estadisticasE);
+        setAjuestesE(ajustesE);
+        console.log(tab);
+    }
+
 
     return (
         <div className="Sidebar">
@@ -52,8 +67,18 @@ const Sidebar = ({ tab, setTab }) => {
                         text={item.text}
                         color={item.color}
                         enabled={item.enable}
-                        tab={tab}
+                        tab={handleClick}
                         setTab={setTab}
+                        inicioE={handleClick}
+                        setInicioE={setInicioE}
+                        cursosE={handleClick}
+                        setCursosE={setCursosE}
+                        entrenamientoE={handleClick}
+                        setEntrenamientoE={setEntrenamientoE}
+                        estadisticasE={handleClick}
+                        setEstadisticasE={setEstadisticasE}
+                        ajustesE={handleClick}
+                        setAjuestesE={setAjuestesE}
                     />
                 ))}
             </div>

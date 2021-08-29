@@ -1,64 +1,57 @@
-import { Form, Input, Button, Checkbox } from 'antd';
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import React from 'react'
 import './Login.css';
+import { Checkbox } from 'antd';
+import { Button } from 'antd';
+import { LoginOutlined, UserAddOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
-    const onFinish = (values) => {
-        console.log('Received values of form: ', values);
-    };
+
+    function onChange(e) {
+        console.log(`checked = ${e.target.checked}`);
+    }
 
     return (
-        <Form
-            name="normal_login"
-            className="login-form"
-            initialValues={{
-                remember: true,
-            }}
-            onFinish={onFinish}
-        >
-            <Form.Item
-                name="username"
-                rules={[
-                    {
-                        required: true,
-                        message: 'Please input your Username!',
-                    },
-                ]}
-            >
-                <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
-            </Form.Item>
-            <Form.Item
-                name="password"
-                rules={[
-                    {
-                        required: true,
-                        message: 'Please input your Password!',
-                    },
-                ]}
-            >
-                <Input
-                    prefix={<LockOutlined className="site-form-item-icon" />}
-                    type="password"
-                    placeholder="Password"
-                />
-            </Form.Item>
-            <Form.Item>
-                <Form.Item name="remember" valuePropName="checked" noStyle>
-                    <Checkbox>Remember me</Checkbox>
-                </Form.Item>
-
-                <a className="login-form-forgot" href="">
-                    Forgot password
-                </a>
-            </Form.Item>
-
-            <Form.Item>
-                <Button type="primary" htmlType="submit" className="login-form-button">
-                    Log in
-                </Button>
-                Or <a href="">register now!</a>
-            </Form.Item>
-        </Form>
+        <div className="Login">
+            <div className="card-login">
+                <div className="card-header">
+                    <h3>Login</h3>
+                </div>
+                <div className="card-body">
+                    <form>
+                        <div className="form-group">
+                            <div className="input">
+                                <p className="input-label">Correo electrónico</p>
+                                <input className="input-text" type="text" placeholder="example@example.com" />
+                            </div>
+                        </div>
+                        <div className="form-group">
+                            <div className="input">
+                                <p className="input-label">Constraseña</p>
+                                <input className="input-text" type="text" placeholder="••••••••••" />
+                            </div>
+                        </div>
+                        <div className="form-group">
+                            <div className="checkbox">
+                                <Checkbox className="input-label" onChange={onChange}>Recuérdame</Checkbox>
+                            </div>
+                        </div>
+                        <div className="buttons-card">
+                            <Link to="/dashboard" >
+                                <Button type="primary" shape="round" icon={<LoginOutlined />} size={30}>
+                                    Iniciar Sesión
+                                </Button>
+                            </Link>
+                            <Link to="/Signup" >
+                                <Button type="primary" shape="round" icon={<UserAddOutlined />} size={30}>
+                                    Crear Cuenta
+                                </Button>
+                            </Link>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     )
 }
 

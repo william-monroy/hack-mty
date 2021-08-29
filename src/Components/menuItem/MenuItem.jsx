@@ -3,8 +3,32 @@ import './MenuItem.css'
 
 const MenuItem = (props) => {
 
+    const handlerOnChange =()=> {
+        if (props.text=='Inicio')
+            props.inicioE(true)
+        else 
+            props.inicioE(false)
+            if (props.text=='Cursos')
+                props.cursosE(true)
+            else
+                props.cursosE(false)
+                if (props.text=='Entrenamiento')
+                    props.entrenamientoE(true)
+                else
+                    props.entrenamientoE(false)
+                    if (props.text=='Estadisticas')
+                        props.estadisticasE(true)
+                    else
+                        props.estadisticasE(false)
+                        if (props.text=='Ajustes')
+                            props.ajustesE(true)
+                        else
+                            props.ajustesE(false)
+    }
+
     const handleClick = () => {
         props.tab(props.text)
+        
     }
 
     return (

@@ -8,7 +8,7 @@ const Cursos = () => {
     let tags = [
         {
             text: 'Ingeniería y Ciencias',
-            enabled: false,
+            enabled: true,
         },
         {
             text: 'Ambiente Construido',
@@ -16,7 +16,7 @@ const Cursos = () => {
         },
         {
             text: 'Ciencias Sociales',
-            enabled: true,
+            enabled: false,
         },
         {
             text: 'Estudios Creativos',
