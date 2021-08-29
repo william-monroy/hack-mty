@@ -1,0 +1,14 @@
+.Tag{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    display: block;
+    margin-right: 10px;
+}
+
+.Tag-text {
+    font-size: 16px;
+    margin: 0;
+}

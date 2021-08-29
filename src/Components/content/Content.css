@@ -1,5 +1,24 @@
-.Content{
-    background-color: #1F1D2B;
+.Content {
+    /* background-color: #1F1D2B; */
+    background-color: brown;
     width: 100%;
     height: calc(100vh-90px);
+    padding: 40px;
+}
+
+.Content-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #f9f9f9;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cards{
+    margin-top: 30px;
 }
