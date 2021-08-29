@@ -24,7 +24,7 @@ const MenuItem = (props) => {
                 className="item-text"
             >
                 <p 
-                    style={{ color: `${props.enabled ? '#ffff' : '#808191'}` }, { fontStyle: `${props.enabled ? 'bold' : 'normal'}` }}
+                    style={{ color: `${props.enabled ? '#f9f9f9f' : '#808191'}` }, { fontStyle: `${props.enabled ? 'bold' : 'normal'}` }}
                 >
                     {props.text}
                 </p>
