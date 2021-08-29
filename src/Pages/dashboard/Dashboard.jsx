@@ -5,7 +5,7 @@ import './Dashboard.css'
 
 const Dashboard = () => {
     return (
-        <div>
+        <div className="Dashboard">
             {/* Navbar */}
             <Navbar />
             {/* Sidebar */}
