@@ -1,0 +1,216 @@
+.Tema{
+    width: 100%;
+    height: 100%;
+}
+
+.Tema__content{
+    background-color: #1F1D2B;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.firstPart{
+    width: 60%;
+}
+
+.video{
+    width: 100%;
+    height: 400px;
+}
+.dataVideo{
+    width: 100%;
+    color: #f9f9f9;
+}
+
+.secondPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.title{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #f9f9f9;
+}
+
+.Temas, .Archivos{
+    color: #f9f9f9;
+    background: #252836;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 12px 16px;
+
+}
+
+.Archivos{
+    margin-top: 40px;
+}
+
+.title_tema, .title_archivos{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    color: #22B07D;
+}
+
+.tema1, .tema2, .tema3, .tema4, .archivo1, .archivo2,.archivo3,.archivo4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+    width: 100%;
+    height: 80px;
+}
+
+.indicador_Tema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    background: #22B07D;
+    border-radius: 8px;
+    color: #252836;
+
+    width: 46px;
+    height: 44px;
+}
+
+.indicador_actual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+
+    width: 46px;
+    height: 40px;    
+    background: #22B07D;
+    border: 2px solid #F9F9F9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #252836;
+}
+
+.indicador_desactivado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 48px;
+    height: 44px;
+    background: #353440;
+    border-radius: 8px
+}
+
+.titulo_Tema, .titulo_Archivo{
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 14px;
+ 
+    width: 180px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.indicador_Archivo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background: #353440;
+    border-radius: 8px;
+    width: 52px;
+    height: 52px;
+}
+
+.bodyTemas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.duracion_Tema, .tipo_Archivo{
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 19px;
+ 
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.titleVideo{
+    margin-top: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    color: #f9f9f9;
+}
+
+.person{
+    display: flex;
+    flex-direction: row;
+}
+
+.person > h3{
+    color: #f9f9f9;
+    padding-left: 16px;
+}
+
+.dataVideo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dataVideo > Button{
+    margin-top: 16px;
+}
+
+.description{
+    margin-top: 24px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    height: 112px;
+    color: #f9f9f9;
+}
