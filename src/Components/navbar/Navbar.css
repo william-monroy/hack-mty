@@ -16,6 +16,7 @@
 .Navbar-user{
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 .Navbar-user-name{

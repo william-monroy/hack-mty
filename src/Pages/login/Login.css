@@ -1,21 +1,117 @@
-#components-form-demo-normal-login .login-form {
-    max-width: 300px;
-}
-
-#components-form-demo-normal-login .login-form-forgot {
-    float: right;
-}
-
-#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
-    float: left;
-}
-
-#components-form-demo-normal-login .login-form-button {
+.Login {
+    background-color: #1F1D2B;
     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(270deg, #FF7551 0%, #6B5ECD 100%);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
 }
 
-.login-form{
-    background: orange;
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 28%;
+    }
+
+    50% {
+        background-position: 100% 73%;
+    }
+
+    100% {
+        background-position: 0% 28%;
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 28%;
+    }
+
+    50% {
+        background-position: 100% 73%;
+    }
+
+    100% {
+        background-position: 0% 28%;
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 28%;
+    }
+
+    50% {
+        background-position: 100% 73%;
+    }
+
+    100% {
+        background-position: 0% 28%;
+    }
+}
+
+.card-login {
+    width: 400px;
+    height: 500px;
+    background-color: #252836;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.card-header>h3 {
+    color: #f9f9f9;
+}
+
+
+.input{
+    padding: 10px;
+}
+
+.input-label{
+    color: #9fa0aa;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.input-text{
     width: 300px;
-    display: block;
+    background-color: #353340;
+    border-radius: 5px;
+    color: #9fa0aa;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.checkbox{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-card{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
 }

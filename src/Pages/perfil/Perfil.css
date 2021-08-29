@@ -1,0 +1,91 @@
+.Perfil{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info{
+    width: 80%;
+    padding: 40px;
+    border-radius: 50px;
+    background-color: #252836;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-name{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #f9f9f9;
+    font-weight: 500;
+}
+
+.info-carrera{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #808191;
+}
+
+.info-semestre, .info-correo, .info-telefono{
+    font-size: 20px;
+    color: #808191;
+}
+
+.campo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #f9f9f9;
+}
+
+.buttons{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.button{
+    color: #9fa0aa;
+    background-color:#353340;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;   align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.inst{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.edit:hover{
+    color: #f9f9f9;
+    background-color: #d8c244;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.pwd:hover{
+    color: #f9f9f9;
+    background-color: #B569C9;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.inst:hover{
+    color: #f9f9f9;
+    background-color: #26D797;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
