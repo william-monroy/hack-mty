@@ -24,5 +24,8 @@ OpenTutor es un ambiente pensado para que solo con algunas pocas configuraciones
 
 
 ### Etapa de Planificación
+Lo primero que hicimos fue reunirnos para poder aterrizar la idea y el modelo de negocios que podiamos implementar.
 
-https://postimages.org/
+De este proceso salio la abstracción del modelado de la base de datos.
+
+[![Main.png](https://i.postimg.cc/Y90XfGNY/Main.png)](https://postimg.cc/xJry9d41)
