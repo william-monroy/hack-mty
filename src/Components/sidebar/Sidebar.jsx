@@ -2,6 +2,7 @@ import React from 'react'
 import './Sidebar.css'
 import { HomeFilled, BookFilled, RocketFilled, PieChartFilled, SettingFilled } from '@ant-design/icons';
 import MenuItem from '../menuItem/MenuItem';
+import { Switch } from 'antd';
 
 const Sidebar = () => {
 
@@ -20,8 +21,8 @@ const Sidebar = () => {
         },
         {
             icon: <RocketFilled />,
-            text: '#FFC700',
-            color: '',
+            text: 'Entrenamiento',
+            color: '#FFC700',
             enable: false,
         },
         {
@@ -40,16 +41,22 @@ const Sidebar = () => {
 
     return (
         <div className="Sidebar">
-            <p className="Sidebar-title">MENU</p>
-            {sidebar.map((item, i) => (
-                <MenuItem
-                    key={i}
-                    icon={item.icon}
-                    text={item.text}
-                    color={item.color}
-                    enabled={item.enable}
-                />
-            ))}
+            <div className="top">
+                <p className="Sidebar-title">MENU</p>
+                {sidebar.map((item, i) => (
+                    <MenuItem
+                        key={i}
+                        icon={item.icon}
+                        text={item.text}
+                        color={item.color}
+                        enabled={item.enable}
+                    />
+                ))}
+            </div>
+            <div className="bottom">
+                <Switch defaultChecked />
+                <p className="bottom-text">Modo Oscuro</p>
+            </div>
         </div>
     )
 }

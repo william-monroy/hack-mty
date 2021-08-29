@@ -1,14 +1,44 @@
 .MenuItem{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .item-icon{
-    padding: 5px;
-    border-radius: 2px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
-.item-text{
+.item-text p{
     margin-left: 5px;
-    font-size: 10px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.item-icon.enabled{
+    color: #fff !important;
+    font-size: 25px;
+}
+
+.item-icon.disabled{
+    color: #808191 !important;
+    font-size: 25px;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    margin: 6px;
+}
+
+.bottom-text{
+    margin-left: 5px;
+    font-size: 15px;
+    color: #808191
 }

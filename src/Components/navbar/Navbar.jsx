@@ -12,7 +12,7 @@ const Navbar = () => {
             <Search/>
             <div className="Navbar-user">
                 <Avatar
-                    size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 40 }}
+                    size={{ xs: 15, sm: 20, md: 30, lg: 30, xl: 40, xxl: 40 }}
                     icon={<UserOutlined />}
                 />
                 <p className="Navbar-user-name">William</p>
