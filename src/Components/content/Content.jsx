@@ -2,6 +2,8 @@ import React from 'react'
 import CardHome from '../cardHome/CardHome'
 import Tag from '../tag/Tag'
 import './Content.css'
+import { UserOutlined } from '@ant-design/icons';
+import Git from '../../images/git.png'
 
 const Content = () => {
 
@@ -49,15 +51,15 @@ const Content = () => {
             titulo: 'Control de Versiones con Git',
             instructor: 'William Monroy',
             visitas: '53K vistas  •  hace 2 semanas',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '25 min',
-            imagen: {},
+            imagen: Git,
         },
         {
             titulo: 'Reacciones Quimicas',
             instructor: 'Anastasia Rios',
             visitas: '13K vistas  •  hace 1 semanas',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '20 min',
             imagen: {},
         },
@@ -65,7 +67,7 @@ const Content = () => {
             titulo: 'Integral Indefinida',
             instructor: 'Anastasia Rios',
             visitas: '45K vistas  •  hace 3 semanas',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '30 min',
             imagen: {},
         },
@@ -73,7 +75,7 @@ const Content = () => {
             titulo: 'Clases y Objetos',
             instructor: 'Carmina Agustín',
             visitas: '40K vistas  •  hace 1 semanas',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '45 min',
             imagen: {},
         },
@@ -81,7 +83,7 @@ const Content = () => {
             titulo: 'Movimiento Rectlineo',
             instructor: 'Febe Davila',
             visitas: '40K vistas  •  hace 1 semanas',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '45 min',
             imagen: {},
         },
@@ -89,7 +91,7 @@ const Content = () => {
             titulo: 'Herencia',
             instructor: 'Fortunato Zorrilla',
             visitas: '8K vistas  •  hace 3 días',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '40 min',
             imagen: {},
         },
@@ -97,7 +99,7 @@ const Content = () => {
             titulo: 'Reacciones Quimicas Inorganicas',
             instructor: 'Gertrudis Rossello',
             visitas: '16K vistas  •  hace 1 semanas',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '30 min',
             imagen: {},
         },
@@ -105,7 +107,7 @@ const Content = () => {
             titulo: 'Servicios Web REST',
             instructor: 'Iris Iborra',
             visitas: '18K vistas  •  hace 6 semanas',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '55 min',
             imagen: {},
         },
@@ -113,7 +115,7 @@ const Content = () => {
             titulo: 'Estructura Atómica',
             instructor: 'Luciano Pedraza',
             visitas: '5K vistas  •  hace 2 días',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '25 min',
             imagen: {},
         },
@@ -121,7 +123,7 @@ const Content = () => {
             titulo: 'Inglés par Entrevistas de Trabajo',
             instructor: '',
             visitas: '15K vistas  •  hace 1 semanas',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '30 min',
             imagen: {},
         },
@@ -129,7 +131,7 @@ const Content = () => {
             titulo: 'Edad De Hierro',
             instructor: 'Socorro Carrera',
             visitas: '2K vistas  •  hace 9 semanas',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '45 min',
             imagen: {},
         },
@@ -137,7 +139,7 @@ const Content = () => {
             titulo: 'Cuerpos Celestes',
             instructor: 'Florentia Torralba',
             visitas: '16K vistas  •  hace 3 semanas',
-            avatar: {},
+            avatar: <UserOutlined />,
             duracion: '44 min',
             imagen: {},
         },
@@ -154,7 +156,7 @@ const Content = () => {
             </div>
             <div className="cards">
                 {videos.map((item, index) => (
-                    <CardHome />
+                    <CardHome titulo={item.titulo} instructor={item.instructor} visitas={item.visitas} avatar={item.avatar} duracion={item.duracion} image={item.imagen} />
                 ))}
             </div>
         </div>

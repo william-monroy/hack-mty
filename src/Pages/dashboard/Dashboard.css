@@ -1,9 +1,10 @@
-.Dashboard{
+.Dashboard {
     height: 100%;
     width: 100%;
+    background-color: #1F1D2B;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: row;
 }
