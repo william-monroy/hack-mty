@@ -1,7 +1,7 @@
 import './CommentsMateria.css';
-import { Comment, Avatar, Divider } from 'antd';
+import { Comment, Avatar } from 'antd';
 
-const ExampleComment = ({ children }) => (
+export const ExampleComment = ({ children }) => (
     <Comment
       actions={[<span key="comment-nested-reply-to">Reply to</span>]}
       author={<a>Han Solo</a>}
