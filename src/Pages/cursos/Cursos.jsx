@@ -2,6 +2,7 @@ import React from 'react'
 import './Cursos.css'
 import Tag from '../../Components/tag/Tag'
 import CardCurso from '../../Components/cardCurso/CardCurso'
+import {Link} from 'react-router-dom'
 
 const Cursos = () => {
     let tags = [
@@ -34,39 +35,15 @@ const Cursos = () => {
     let cards = [
         {
             nombre: 'Matemática',
-            cantidad: '10 cursos disponibles',
+            cantidad: '15 cursos disponibles',
             temas: 'Límites • Derivadas • Antiderivadas • Integrales • Métodos de Integración • Fracciones Parciales • Longitud de Arco • Superficies • Volúmenes • Optimización • Áreas • Curvas paramétricas • Coordenadas polares...',
-            visitas: '53K vistas'
+            visitas: '5.2K vistas'
         },
         {
-            nombre: '',
-            cantidad: '',
-            temas: '',
-            visitas: ''
-        },
-        {
-            nombre: '',
-            cantidad: '',
-            temas: '',
-            visitas: ''
-        },
-        {
-            nombre: '',
-            cantidad: '',
-            temas: '',
-            visitas: ''
-        },
-        {
-            nombre: '',
-            cantidad: '',
-            temas: '',
-            visitas: ''
-        },
-        {
-            nombre: '',
-            cantidad: '',
-            temas: '',
-            visitas: ''
+            nombre: 'Programación',
+            cantidad: '10 cursos disponibles',
+            temas: 'C++ • Kotlin • Android • Java • C# • Unity • Swift • Flutter • Dart • Go • Scala • Earlang • Diagramas de Flujo • Concurrencia • Notacion Algoritmica • Análisis de Complejidad de Algoritmos • Machine Learning • Data cience • R • Python...',
+            visitas: '5.2K vistas'
         }
     ]
 
@@ -80,7 +57,9 @@ const Cursos = () => {
             </div>
             <div className="cards">
                 {cards.map((item, index) => (
-                    <CardCurso nombre={item.nombre} cantidad={item.cantidad} temas={item.temas} visitas={item.visitas} key={index} />
+                    <Link to="/Cursos/Materia">
+                        <CardCurso nombre={item.nombre} cantidad={item.cantidad} temas={item.temas} visitas={item.visitas} key={index} />
+                    </Link>
                 ))}
             </div>
         </div>

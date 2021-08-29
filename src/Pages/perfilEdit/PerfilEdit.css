@@ -1,0 +1,79 @@
+.PerfilEdit {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.info {
+    width: 80%;
+    padding: 40px;
+    border-radius: 50px;
+    background-color: #252836;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button {
+    color: #9fa0aa;
+    background-color: #353340;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.inst {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+.inst:hover {
+    color: #f9f9f9;
+    background-color: #2679d7;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.form{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input{
+    padding: 10px;
+}
+
+.input-label{
+    color: #9fa0aa;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.input-text{
+    width: 300px;
+    background-color: #353340;
+    border-radius: 5px;
+    color: #9fa0aa;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+}

@@ -4,6 +4,7 @@ import Login from './Pages/login/Login';
 import Home from './Pages/home/Home';
 import Dashboard from './Pages/dashboard/Dashboard';
 import Materia from './Pages/materia/Materia';
+import Perfil from './Pages/perfil/Perfil';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/Login" component={Login} />
         <Route path="/Dashboard" component={Dashboard} />
         <Route path="/Cursos/Materia" component={Materia} />
+        <Route path="/Perfil" component={Perfil} />
       </Switch>
     </Router >
   );

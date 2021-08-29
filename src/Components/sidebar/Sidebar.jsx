@@ -6,7 +6,7 @@ import { Switch } from 'antd';
 
 const Sidebar = ({ tab, setTab }) => {
 
-    
+    {console.log(tab)}
 
     let sidebar = [
         {
