@@ -3,16 +3,23 @@ import './Tag.css'
 
 const Tag = (props) => {
     return (
-        <div 
+        <div
             className="Tag"
-            style={{backgroundColor: `${props.enabled?'#6B5ECD':'#353340'}`}}
+            style={{ backgroundColor: `${props.enabled ? '#6B5ECD' : '#353340'}` }}
         >
-            <p 
-                className="Tag-text"
-                style={{Color: `${props.enabled?'#f9f9f9':'#808191'}`}}
-            >
-                {props.text}
-            </p>
+            {props.enabled ?
+                <p
+                    className="Tag-text enabled"
+                >
+                    {props.text}
+                </p>
+                :
+                <p
+                    className="Tag-text disabled"
+                >
+                    {props.text}
+                </p>
+            }
         </div>
     )
 }

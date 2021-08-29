@@ -16,6 +16,15 @@
     margin: 5px;
 }
 
+.item-text.enabled{
+    color: #f9f9f9;
+    font-weight: 600;
+}
+
+.item-text.disabled{
+    color: #808191;
+}
+
 .item-icon.enabled{
     color: #f9f9f9 !important;
     font-size: 25px;
