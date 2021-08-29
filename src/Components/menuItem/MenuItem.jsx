@@ -2,8 +2,13 @@ import React from 'react'
 import './MenuItem.css'
 
 const MenuItem = (props) => {
+
+    const handleClick = () => {
+        props.tab(props.text)
+    }
+
     return (
-        <div className="MenuItem">
+        <div className="MenuItem" onClick={() => handleClick()}>
             {
                 props.enabled ?
                     <div

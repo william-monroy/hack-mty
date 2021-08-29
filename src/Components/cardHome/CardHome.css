@@ -1,8 +1,9 @@
 .CardHome{
     width: 260px;
     height: 315px;
-    background-color: burlywood;
+    background-color: #252836;
     border-radius: 30px;
+    margin-top: 30px;
 }
 
 .card-top{
