@@ -17,31 +17,31 @@ const Sidebar = ({ tab, setTab }) => {
             icon: <HomeFilled />,
             text: 'Inicio',
             color: '#FF7551',
-            enable: inicioE,
+            enable: true,
         },
         {
             icon: <BookFilled />,
             text: 'Cursos',
             color: '#22B07D',
-            enable: cursosE,
+            enable: true,
         },
         {
             icon: <RocketFilled />,
             text: 'Entrenamiento',
             color: '#FFC700',
-            enable: entrenamientoE,
+            enable: true,
         },
         {
             icon: <PieChartFilled />,
             text: 'Estadísticas',
             color: '#E890FF',
-            enable: estadisticasE,
+            enable: true,
         },
         {
             icon: <SettingFilled />,
             text: 'Ajustes',
             color: '#839DFE',
-            enable: ajustesE,
+            enable: true,
         },
     ]
     
